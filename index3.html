@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AusTravel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="code3.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"
+    integrity="sha512-U0JTVRYQvMdUjj0AKyUZW4PErdhqhEsuCfVvtjFlO7BiI+rmVp5dxS8MfzCQBoJaEbrY4R2ruMRbCv8zVRC4ww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <header>
+        <h1><i class="fa-solid fa-earth-oceania"></i> AusTravel</h1>
+        <div class = "menu">
+            <a href = "index.html"class = "menu_item extramenu_item">Главная</a>
+            <a href = "index4.html"class = "menu_item extramenu_item">Города</a>
+            <a href = "index2.html" class = "menu_item extra_menu_item">Купить поездку</a>
+        </div>
+    </header>
+    <main>
+        <div class="preloader" id="preload" style = "display: none;">
+            <h2>Подтвердите, что вы не робот</h2>
+            <h3 style = "margin: 10px 0px 30px;">Нарисуйте букву:</h3>
+            <h3 id = "letter">""</h3>
+            <canvas id="game" width="400" height="200"> </canvas>
+            <input id = "testing" class = "button" style = "width: 300px;height: 50px;" type="submit" value="Подтвердить">
+        </div>
+        <section class = "section_1">
+            <div class = "box_section_7">
+                <h2>Удобный поиск отелей</h2>
+                <h3 style = "margin: 10px 0px 30px;">Забронируйте идеальный номер по выгодной цене</h3>
+                <div class = "box_section_9">
+                    <a class = "menumenu neeextramenumenu" style = "border-right: 1px solid rgb(56, 74, 95);" href="index2.html">Авиабилеты</a>
+                    <a class = "menumenu extramenumenu" style = "padding-right: 10px;border-radius: 0px 30px 30px 0px;" href="index3.html">Отели</a>
+                </div> 
+                <div class = "box_section_8">
+                    <input class = "inputfield in_1" style="border-radius: 30px 0px 0px 30px;width: 400px;" type="text" placeholder="Город или отель">
+                    <input class = "inputfield in_2" type="text" placeholder="Заезд">
+                    <input class = "inputfield in_3" type="text" placeholder="Выезд">
+                    <input class = "inputfield in_4" style="border-radius: 0px 30px 30px 0px;" type="number" placeholder="Количество гостей"> 
+                </div>
+                <input id = "finder" class = "button" style = "width: 300px;height: 50px;" type="submit" value="Найти">
+            </div>
+        </section>
+        <section class = "section_1 section_1_extra">
+            <div class = "box_section_7_extra">
+
+                <h2>Вот, что нашлось:</h2>
+                <h3 style = "margin: 10px 0px 30px;"></h3>
+
+                <div class = "tickets tickets_extra2">
+                    <div class = "tickets_el2">
+                        <p class = "pp1 pp4">Отель</p>
+                    </div>
+                    <div class = "tickets_el2">
+                        <p class = "pp1 pp4">Заезд</p>
+                    </div>
+                    <div class = "tickets_el2">
+                        <p class = "pp1 pp4">Выезд</p>
+                    </div>
+                    <div class = "tickets_el2">
+                        <p class = "pp1 pp4">Осталось номеров</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer style = "margin-top: 0px;">
+        <ul class = "ulli">
+            <li>О проекте</li>
+            <li>Общие вопросы</li>
+            <li>Положение о конфиденциальности и cookie</li>
+            <li>Контакты</li>
+            <li>Разработчик: <span class = "yellow">Колесников Андрей</span></li>
+        </ul>
+    </footer>
+</body>
+</html>
